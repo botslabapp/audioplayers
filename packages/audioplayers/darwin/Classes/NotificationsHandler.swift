@@ -3,7 +3,7 @@ import MediaPlayer
 #endif
 
 class NotificationsHandler {
-    private let reference: SwiftAudioplayersPlugin
+    private unowned let reference: SwiftAudioplayersPlugin
     
     #if os(iOS)
     private var infoCenter: MPNowPlayingInfoCenter? = nil
